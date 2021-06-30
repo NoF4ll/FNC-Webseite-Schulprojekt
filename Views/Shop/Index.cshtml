@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Offizieller Article Shop";
+}
+
+@using WebProjekt_Beispiel.Models
+@model List<Article>
+
+<div class="gridContainer">
+    @foreach (var article in Model)
+    {
+        <partial name="ArticleView" model="article" />
+    }
+</div> 
+
+@section Scripts {
+    <link rel="stylesheet" href="~/css/ShopIndex.css" />
+}

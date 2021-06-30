@@ -1,0 +1,82 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*
+* {
+    border: 1px solid black;
+}
+
+*/
+
+
+body {
+    background-color: rgb(24, 26, 27);
+}
+
+#container {
+    width: 90%;
+    min-width: 800px;
+    margin: 0px auto;
+}
+
+header {
+    height: 200px;
+    border-bottom: 1px solid #9c5f05;
+    border-left: 1px solid #9c5f05;
+    border-right: 1px solid #9c5f05;
+    border-top: 1px solid #9c5f05;
+    background-image: url("/images/background2.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.contacts{
+    margin-right: 3px;
+}
+content {
+    color: white;
+    width: 85%;
+    min-width: 300px;
+    float: left;
+    min-height: 500px;
+    border-left: 1px solid #9c5f05;
+    border-right: 1px solid #9c5f05;
+    padding: 20px 10px 10px 10px;
+    background-image: url("/images/backgroundContent.jpg");
+    background-size:100%;
+}
+
+aside {
+    width: 15%;
+    min-width: 150px;
+    float: right;
+    min-height: 300px;
+    border-right: 1px solid #9c5f05;
+
+    
+}
+
+footer {
+    clear: both;
+    border-top: 1px solid #9c5f05;
+}
+
+
+thead{
+    font-size: 150%;
+    background-color: #00ffff;
+    text-align: center;
+    color: white;
+}
+
+tfoot{
+    font-size: 80%;
+    text-align: right;
+}
+
+tbody{
+    line-height: 30px;
+}
+tbody td {
+    padding: 7px;
+}

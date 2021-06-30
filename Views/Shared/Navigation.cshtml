@@ -1,0 +1,39 @@
+﻿<nav class="navigationbar">
+    <ul>
+        <li>
+            <a asp-action="index" asp-controller="home">Startseite</a>
+        </li>
+        <li>
+            <a asp-action="aboutUs" asp-controller="home">Über uns</a>
+        </li>
+        <li>
+            <a asp-action="RegistrationView" asp-controller="Registration">Registrieren</a>
+        </li>
+        <li>
+            <a asp-action="Login" asp-controller="Registration">Login</a>
+        </li>
+        <li>
+            <a asp-action="index" asp-controller="shop">Shop</a>
+        </li>
+        <li>
+            <a asp-action="returnArticles" asp-controller="shop">Rücksendungen</a>
+        </li>
+        <li>
+            <a asp-action="ReturnedArticles" asp-controller="Shop">Zurückgegebene Artikel</a>
+        </li>
+        <li>
+            <a asp-action="Index" asp-controller="Registration">Zeig Alle User</a>
+        </li>
+
+        <li>
+            <a asp-action="CreateComments" asp-controller="Shop">Kommentar Schreiben</a>
+        </li>
+        <li>
+            <a asp-action="ArticleComments" asp-controller="Shop">Kommentar Anzeigen</a>
+        </li>
+
+
+    </ul>
+</nav>
+
+<link rel="stylesheet" href="~/css/Navbar.css" />

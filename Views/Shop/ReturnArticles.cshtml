@@ -1,0 +1,53 @@
+﻿@model WebProjekt_Beispiel.Models.Article
+
+@{
+    ViewData["Title"] = "ReturnArticles";
+}
+
+<h1>ReturnArticles</h1>
+
+<h4>Article</h4>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ReturnArticles" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Firstname" class="control-label"></label>
+                <input asp-for="Firstname" class="form-control" />
+                <span asp-validation-for="Firstname" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Lastname" class="control-label"></label>
+                <input asp-for="Lastname" class="form-control" />
+                <span asp-validation-for="Lastname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Articlename">Welches Produkt möchten Sie zurücksenden? *</label><br />
+                <select asp-for="Articlename">
+                    <option value="FnaticJersy">FNATIC Jersy</option>
+                    <option value="FnaticChair">Fnatic DX Racer Gaming Stuhl</option>
+                    <option value="FnaticKeyboard">Streak 65 Esports Keyboard</option>
+                    <option value="FnaticHeadset">React Esports Performance Headset</option>
+                </select><br />
+            </div>
+            <div class="form-group">
+                <label asp-for="Reason">Grund der Rücksende *</label><br />
+                <select asp-for="Reason">
+                    <option value="Damaged">Beschädigt</option>
+                    <option value="WrongSize">Falsche größe</option>
+                    <option value="Other">Sonstiges</option>
+                    <option value="Ugly">Gefällt mir nicht</option>
+                </select><br />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

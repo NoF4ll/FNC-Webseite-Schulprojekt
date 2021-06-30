@@ -1,0 +1,17 @@
+﻿.commentImage {
+    width:100px;
+}
+.commentTable {
+    border: solid black 2px;
+}
+.commentBottom {
+    border-bottom: solid black 2px;
+}
+
+td {
+    border: solid black 1px;
+}
+
+svg {
+    fill: #ffd055;
+}

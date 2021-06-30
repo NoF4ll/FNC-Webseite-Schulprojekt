@@ -1,0 +1,31 @@
+﻿@using WebProjekt_Beispiel.Models
+
+@model Article
+
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                @Model.ArticleId
+            </td>
+            <td>
+                @Model.Articlename
+            </td>
+            <td>
+                @Model.Price €
+            </td>
+            <td>
+                @Model.Description
+            </td>
+            <td>
+                @Model.ReleaseDate.ToString()
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <img class="articleImage" src=".@Model.ImagePath" />
+            </td>
+        </tr>
+    </tbody>
+</table>

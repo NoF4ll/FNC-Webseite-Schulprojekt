@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "ReturnedArticles";
+}
+
+<h1>ReturnedArticles</h1>
+
+@using WebProjekt_Beispiel.Models
+@model List<Article>
+
+
+@if ((Model == null || Model.Count == 0))
+{
+    <p>
+        Es wurden keine Artikel zurückgesendet
+    </p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <td colspan=5>
+                    Zurückgesendete Artikel
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Artikel-ID</td>
+                <td>Name</td>
+                <td>Vorname</td>
+                <td>Nachname</td>
+                <td>Grund</td>
+            </tr>
+            @foreach (Article a in Model)
+            {
+                <tr>
+                    <td>@a.ArticleId</td>
+                    <td>@a.Articlename</td>
+                    <td>@a.Firstname</td>
+                    <td>@a.Lastname</td>
+                    <td>@a.Reason</td>
+                    <td>@a.ReleaseDate</td>
+                    <td>
+                        <form action="/shop/delete/@a.ArticleId" method="post">
+                            <input type="submit" value="delete" />
+                        </form>
+                    </td>
+                    <td>
+                        <form action="/shop/update/@a.ArticleId" method="get">
+                            <input type="submit" value="update" />
+                        </form>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan=5>
+                    Zurückgegebene Artikel
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebProjekt_Beispiel</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <div id="image">
+                <img src="/images/fnatic.png" height="200" width="600" />
+            </div>
+        </header>
+        <main>
+            
+            <content>
+          
+                @RenderBody()
+            </content>
+            <aside>
+                <a class="twitter-timeline" data-width="350" data-height="500" data-theme="dark" href="https://twitter.com/FNATIC?ref_src=twsrc%5Etfw">Tweets by FNATIC</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                @*
+
+        <h4 class="contacts">Kontakieren</h4>
+        <h6 contacts="contacts">Generelle Anfrage</h6>
+        <p class="contacts">contact@fnatic.com</p>
+        <h6 class="contacts">Partner</h6>
+        <p class="contacts">partners@fnatic.com</p>
+        <h6 class="contacts">Support</h6>
+        <p class="contacts">support@fnatic.com</p>
+                *@
+            </aside>
+        </main>
+        <footer>
+            <nav>
+                <partial name="Navigation" />
+            </nav>
+        </footer>
+    </div>
+
+   
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/JSBase.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿@model WebProjekt_Beispiel.Models.Article
+
+@{
+    ViewData["Title"] = "ReturnArticles";
+}
+
+<h1>ReturnArticles</h1>
+
+<h4>Article</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Update" method="post">
+            <partial name="ArticleForm" model="Model" />
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

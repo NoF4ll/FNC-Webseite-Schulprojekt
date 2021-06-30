@@ -1,0 +1,30 @@
+﻿
+.navigationbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+    .navigationbar ul li {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+        .navigationbar ul li a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: grey;
+        }
+
+.navigationbar li:last-child {
+    border-right: none;
+}
+
+.navigationbar li a:hover {
+    background-color: yellow;
+}
+
+
